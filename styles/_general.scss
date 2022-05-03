@@ -1,0 +1,23 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Html, Body */
+body {
+  height: 100vh;
+
+  //   border: 1px solid red;
+  display: grid;
+  grid-template-rows: auto 0px;
+  //   display: flex;
+  //   flex-direction: column;
+  background-color: rgba(13, 12, 14, 0.95);
+}

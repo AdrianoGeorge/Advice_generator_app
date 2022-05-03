@@ -9,6 +9,7 @@ window.onload = showQuote;
 // Eventlistener for dice button
 dice.addEventListener("click", function () {
   showQuote();
+  // console.log("Clicked");
 });
 
 // showQuote function to show random quote from API
@@ -19,8 +20,12 @@ function showQuote() {
     .then((data) => {
       adviceNum.textContent = data.id;
       adviceText.textContent = data.advice;
+      console.log(
+        "Why i need to click twice or more? in order to get a new quote"
+      );
+      console.log("Quote: " + data.advice);
     })
     .catch((error) => {
-      alert(`Error ${error}`);
+      console.log(`Error ${error}`);
     });
 }

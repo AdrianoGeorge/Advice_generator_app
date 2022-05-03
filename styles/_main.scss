@@ -1,0 +1,72 @@
+@import "./general.scss";
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: $dark-Grayish-Blue;
+  max-width: 550px;
+  width: fit-content; //what is fit-content for?  It's a CSS property that makes the width of the element to fit the content.
+  // The fit-content behaves as fit-content(stretch). In practice this means that the box will use the available space, but never more than max-content.
+  height: fit-content;
+  margin: auto 20px;
+  /* Media Query */
+  //   @media (min-width: 530px) {
+  //     main {
+  //       margin: auto;
+  //     }
+  //   }
+  margin: auto;
+  .advice-container {
+    /* Advice Id */
+    .advice-id {
+      color: $neon-Green;
+      text-transform: uppercase;
+      word-spacing: 10px;
+    }
+
+    /* Advice Text */
+    .advice-text {
+      margin: 20px auto 0;
+      font-size: 28px;
+      width: 100%;
+      color: $light-Cyan;
+    }
+  }
+  /* Divider */
+  .divider {
+    margin: 20px 0 30px;
+    background-size: 100% 100%;
+    width: 100%;
+  }
+  #dice {
+    background-color: $neon-Green;
+    border-radius: 50%;
+    padding: 15px 16px 12px;
+    border: 0;
+    cursor: pointer;
+    margin: 0 auto -50px;
+  }
+  #dice img {
+    width: 23px;
+  }
+  #dice:hover {
+    box-shadow: 0 0 40px $neon-Green;
+  }
+}
+
+/* Attribution */
+.attribution {
+  font-size: 0.8rem;
+  align-self: flex-end;
+  text-align: center;
+  background-color: $dark-Grayish-Blue;
+  padding: 10px;
+  color: $light-Cyan;
+  .attribution a {
+    color: $neon-Green;
+  }
+}
