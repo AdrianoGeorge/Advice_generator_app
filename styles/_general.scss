@@ -13,8 +13,13 @@ html {
 /* Html, Body */
 body {
   height: 100vh;
-
   //   border: 1px solid red;
+  // padding: 150px;
+  // padding-top: 50px;
+  // padding-bottom: 50px;
+  // margin: 30% auto;
+
+  // padding-top: calc(200 / (300 / 100) * 1%);
   display: grid;
   grid-template-rows: auto 0px;
   //   display: flex;
